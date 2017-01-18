@@ -4,6 +4,10 @@
   <title>A Compliment</title>
 </head>
 <body>
+    {% extends "base.html" %}
+
+    {% block content %}  
+
     Hi {{ person }}! I think you're {{ compliment }}!
     <form action="/game">
       <p>Would you like to play a game? 
@@ -12,6 +16,7 @@
         <input type=hidden name="person" value={{ person }}>
       <input type="submit">
      </form>
+     {% endblock %}
        
 
 </body>

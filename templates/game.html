@@ -4,6 +4,9 @@
   <title>Let's Play a Game</title>
 </head>
 <body>
+      {% extends "base.html" %}
+
+      {% block content %}      
     <p>Hello, {{ person }}! let's play a game</p>
     <p>
       <form action="/madlib">
@@ -14,6 +17,8 @@
         Adverb: swimmingly<input type="checkbox" name="adverbs" value="swimmingly">
         fantastically<input type="checkbox" name="adverbs" value="fantastically"><br>
         <input type="submit">
+        {% endblock %}
+
      </form>
 
 </body>
