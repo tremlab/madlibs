@@ -44,8 +44,6 @@ def show_madlib_form():
     choice = request.args.get("game_choice")
     person = request.args.get("person")
 
-    boogers
-
     if choice == "no":
         return render_template("goodbye.html",
                            person=person)
@@ -62,12 +60,16 @@ def show_madlib():
     color = request.args.get("color")
     noun = request.args.get("noun")
     adjective = request.args.get("adjective")
+    adverbs = request.args.getlist("adverbs")
+
+
 
     return render_template("madlib.html",
                            celebrity=celebrity,
                            color=color,
                            noun=noun,
-                           adjective=adjective)
+                           adjective=adjective,
+                           adverbs=adverbs)
 
 
 

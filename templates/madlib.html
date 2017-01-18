@@ -5,7 +5,7 @@
 </head>
 <body>
     
-    There once was a {{ color }} {{ noun }} sitting in the Hackbright Lab. When {{ celebrity }} went to pick it up, it burst into flames in a totally {{ adjective }} way.
+    There once was a {{ color }} {{ noun }} sitting in the Hackbright Lab. When {{ celebrity }} went to pick it up, it burst into flames in a totally {% for adverb in adverbs %} {{adverb}}, {% endfor %} {{ adjective }} way.
 
 </body>
 </html>
